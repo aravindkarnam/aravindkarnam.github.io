@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Aravind Karnam</title>
+
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font: 16px Helvetica, Sans-Serif;
+        line-height: 24px;
+        background: url(images/noise.jpg);
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #page-wrap {
+        width: 800px;
+        margin: 40px auto 60px;
+      }
+
+      #pic {
+        float: right;
+        margin: -30px 10px 0 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      #pic:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      h1 {
+        margin: 0 0 16px 0;
+        padding: 0 0 16px 0;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        border-bottom: 1px solid #999;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 0 0 6px 0;
+        position: relative;
+      }
+
+      h2 span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+        font-family: Georgia, Serif;
+        font-size: 16px;
+        color: #555;
+        font-weight: normal;
+      }
+
+      p {
+        margin: 0 0 16px 0;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+      }
+
+      a:hover {
+        border-bottom-style: solid;
+        color: black;
+      }
+
+      ul {
+        margin: 0 0 32px 17px;
+        font-size: 16px;
+      }
+
+      li {
+        margin: 5px;
+      }
+
+      #socialmedia {
+        width: 500px;
+        float: left;
+        padding: 10px;
+        font-family: Georgia, Serif;
+        font-style: italic;
+        color: #666;
+      }
+
+      #objective {
+        margin: 50px 0 0px 0;
+        width: 100%;
+        float: left;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      #objective:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      #objective p {
+        padding: 10px;
+        font-family: Georgia, Serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #666;
+      }
+
+      dt {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 26px 0 0;
+        width: 150px;
+        float: left;
+        height: 100px;
+      }
+
+      dd {
+        border-left: 1px solid #999;
+        padding: 10px;
+        width: 600px;
+        float: right;
+      }
+
+      dd.clear {
+        border-left: none;
+        padding: 0px;
+        float: none;
+        margin: 0;
+        height: 30px;
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        table-layout: fixed;
+      }
+
+      table.data {
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: center;
+        font-size: 12px;
+        text-align: left;
+        padding: 7px;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      td:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      tr {
+        border-radius: 2px;
+        background: #eeeeee;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      tr:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      tr:nth-child(even) {
+        background: #ffffff;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--<script src="https://use.fontawesome.com/b1b9135847.js"></script>!-->
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <img src="images/Capture.PNG" alt="Photo of aravind karnam" id="pic" />
+
+      <div id="contact-info" class="vcard">
+        <!-- Microformats! -->
+
+        <h1 class="fn">
+          Aravind Karnam R.<br /><span style="font-size:24px;color:#999"
+            >Full Stack Engineer</span
+          >
+        </h1>
+        <table>
+          <tr>
+            <td><i class="fa fa-mobile" style="font-size:24px"></i> Phone</td>
+            <td>
+              <span class="tel"
+                ><a href="tel:=+918688743302">8688743302</a></span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa fa-envelope-square" style="font-size:24px"></i> Email
+            </td>
+            <td>
+              <a class="email" href="mailto:aravind.karanam@gmail.com"
+                >aravind.karanam@gmail.com</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="socialmedia">
+        <p>
+          Follow me on social media ...<br />
+          <a
+            href="https://github.com/aravindkarnam"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i
+              class="fab fa-github-square"
+              style="font-size:36px;padding:3px;"
+            ></i
+          ></a>
+          <a
+            href="https://www.hackerrank.com/aravind_k_r"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i
+              class="fab fa-hackerrank"
+              style="font-size:36px;padding:3px;"
+            ></i
+          ></a>
+          <a
+            href="https://twitter.com/aravind_karnam"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i
+              class="fab fa-twitter-square"
+              style="font-size:36px;padding:3px;"
+            ></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aravind-karnam-rajendraprasad/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin" style="font-size:36px;padding:3px;"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/aravind.karanam"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook" style="font-size:36px;padding:3px;"></i
+          ></a>
+          <a
+            href="https://medium.com/@aravind.karanam"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-medium" style="font-size:36px;padding:3px;"></i
+          ></a>
+        </p>
+      </div>
+      <div id="socialmedia">
+        <a
+          href="https://goo.gl/forms/fxWI7xJzAMBI5mvP2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-drafting-compass" style="font-size:24px"></i> Request
+          a quote for your project </a
+        >&nbsp&nbsp&nbsp
+
+        <a href="/Aravind Karnam.pdf" download>
+          <i class="fa fa-download" style="font-size:24px"></i> Download as PDF
+        </a>
+      </div>
+      <div class="clear"></div>
+
+      <div id="objective">
+        <p>
+          "Full Stack engineer with 3+ years of experience in web development,
+          cloud computing and chatbots. Experienced in building applications for
+          business process automation, through application of Machine learning,
+          natural language processing and computer vision."
+        </p>
+      </div>
+      <dl>
+        <!-- <dd class="clear"></dd>
+
+
+            <dd class="clear"></dd>-->
+
+        <dt>
+          <i class="fa fa-diagnoses" style="font-size:48px;padding:10px;"></i>
+          <hr />
+          Skills &amp Expertise
+        </dt>
+        <dd>
+          <h2>
+            <i class="fas fa-code" style="font-size:28px;padding:10px"></i>
+            Technical skills
+          </h2>
+          <table class="data">
+            <tr>
+              <td>
+                <i class="fab fa-js" style="font-size:18px;"></i> JavaScript
+              </td>
+              <td>
+                <i class="fab fa-python" style="font-size:18px;"></i> python
+              </td>
+              <td><i class="fab fa-html5" style="font-size:18px;"></i> HTML</td>
+              <td>
+                <i class="fab fa-css3-alt" style="font-size:18px;"></i> CSS
+              </td>
+              <td><i class="fab fa-java" style="font-size:18px;"></i> Java</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fab fa-angular" style="font-size:18px;"></i> Angular
+              </td>
+              <td>
+                <i class="fab fa-react" style="font-size:18px;"></i> React &amp
+                React Native
+              </td>
+              <td>
+                <i class="fab fa-node" style="font-size:18px;"></i> NodeJs
+              </td>
+              <td>
+                <i class="fas fa-code-branch" style="font-size:18px;"></i> GIT
+              </td>
+              <td>
+                <i class="fas fa-database" style="font-size:18px;"></i> SQL &amp
+                NoSQL databases
+              </td>
+            </tr>
+            <tr>
+              <td>REST api design</td>
+              <td>Mircosoft Bot Framework, BotPress</td>
+              <td>LUIS, Dialogflow, Rasa.ai</td>
+              <td>Tensorflow, Pandas, Numpy</td>
+              <td>Micro services</td>
+            </tr>
+            <tr>
+              <td>Algorithm Design</td>
+              <td>Data Structures</td>
+              <td>Machine Learning</td>
+              <td>Computer Networks &amp Security</td>
+              <td>Design Principles</td>
+            </tr>
+          </table>
+
+          <h2>
+            <i class="fas fa-industry" style="font-size:28px;padding:10px"></i>
+            Domain Knowledge
+          </h2>
+          <table class="data">
+            <tr>
+              <td>
+                <i class="fas fa-project-diagram" style="font-size:18px;"></i>
+                Software Development Life Cycle
+              </td>
+              <td>
+                <i class="fas fa-cogs" style="font-size:18px;"></i>
+                Solution Architecture
+              </td>
+              <td>
+                <i class="fas fa-gavel" style="font-size:18px;"></i> IT
+                compliance
+              </td>
+              <td>
+                <i class="fas fa-cloud" style="font-size:18px;"></i> Cloud
+                computing Heroku, Azure, GCP
+              </td>
+            </tr>
+          </table>
+
+          <h2>
+            <i class="far fa-handshake" style="font-size:28px;padding:10px"></i
+            >Interpersonal Skills
+          </h2>
+          <table class="data">
+            <tr>
+              <td>
+                <i class="fas fa-users" style="font-size:18px;"></i> Leadership
+              </td>
+              <td>
+                <i
+                  class="fas fa-chalkboard-teacher"
+                  style="font-size:18px;"
+                ></i>
+                Presentation Skills
+              </td>
+              <td>
+                <i class="fas fa-people-carry" style="font-size:18px;"></i> Team
+                building
+              </td>
+            </tr>
+          </table>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>
+          <i class="fa fa-suitcase" style="font-size:48px;padding:10px"></i
+          ><br />
+          <hr />
+          Work Experience
+        </dt>
+        <dd>
+          <table class="data">
+            <tr>
+              <td>
+                <h2>
+                  Idealforce LLC<span
+                    >Phoenix, AZ (March 2018 - June 2019)</span
+                  >
+                </h2>
+                <hr />
+                <br />
+                <h2>
+                  <span
+                    >Software Engineering Consultant, Contract with Judicial
+                    Branch of AZ</span
+                  >
+                </h2>
+                <ul>
+                  <li>
+                    Developed an AI chatbot system that can check-in jurors,
+                    respond to court summons, answer frequently asked questions
+                    about jury duty and help users complete related
+                    questionnaires. It also provides a human in the loop system
+                    for Human representatives to take over the chat from bots.
+                    The system is built using Nodejs and Angular, Microsoft bot
+                    framework, Azure cosmosDB Dialogflow platform and azure
+                    functions.
+                  </li>
+                  <li>
+                    Developed a POC to convert scanned pdf( Images that are
+                    unsearchable by text) of minute entries and case filings of
+                    family court into text through OCR (optical character
+                    recognition) and used stanford NER(Named Entity Recognizer)
+                    tagger libraries to extract information about plaintiffs,
+                    lawyers and other case related information. Technologies
+                    involved in this project include Tesseract for OCR, stanford
+                    nlp libraries for multi class text classification, named
+                    entity recognition etc and python for data pipelining.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  KPMG
+                  <span>Sacramento, CA (January,2017 - February,2018)</span>
+                </h2>
+                <hr />
+                <br />
+                <h2><span>Software Engineering Consultant</span></h2>
+                <ul>
+                  <li>
+                    Developed chatbots using Microsoft bot framework with LUIS.
+                    Responsible for Web services (REST and SOAP) in Nodejs to
+                    serve as fulfilment handlers for the bots, chat interfaces
+                    in Angular 2 and setting up ci/cd pipeline to deploy code to
+                    azure web apps.
+                  </li>
+                  <li>
+                    Developed an on-premises chat bot system using Botpress and
+                    Rasa.ai framework for NLP.
+                  </li>
+                  <li>
+                    Developed a POC to predict risk of opioid addiction amongst
+                    patients issued opioid medication using parameters such as
+                    marital status, job security, food security and
+                    neighbourhood etc. This POC is pitched to various state and
+                    local agencies to be included in their case management
+                    systems to assist case workers to coordinate their efforts.
+                    Azure ML studio was used to built this prototype and
+                    algorithm used for prediction is decision trees.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Interstate 21 LLC
+                  <span>Sacramento, CA (August,2016 - December,2016)</span>
+                </h2>
+                <hr />
+                <br />
+                <h2><span>Software Engineer Intern</span></h2>
+                <ul>
+                  <li>
+                    Full stack developer. AngularJs, NodeJs. Worked with
+                    firebase, strongloop, heroku platform and unit testing
+                    framework Jasmine &amp karma.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>
+          <i
+            class="fa fa-graduation-cap"
+            style="font-size:48px;padding:10px;"
+          ></i>
+          <hr />
+          Education
+        </dt>
+        <dd>
+          <table class="data">
+            <tr>
+              <td>
+                <h2>
+                  <i class="fa fa-university" style="font-size:24px"></i>
+                  California State University, Sacramento
+                </h2>
+                <hr />
+                <p style="padding:5px;">
+                  <i class="fa fa-award" style="font-size:18px"></i
+                  ><strong> Master of science</strong><br />
+                  Computer Engineering
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  <i class="fa fa-university" style="font-size:24px"></i> Sri
+                  Venkateswara University
+                </h2>
+                <hr />
+                <p style="padding:5px;">
+                  <i class="fa fa-award" style="font-size:18px"></i
+                  ><strong> Bachelor of Technology</strong><br />
+                  Electronics Instrumentation and Control Engineering
+                </p>
+              </td>
+            </tr>
+          </table>
+        </dd>
+        <dd class="clear"></dd>
+
+        <dd class="clear"></dd>
+
+        <dt>
+          <i class="fas fa-thumbs-up" style="font-size:48px;padding:10px"></i
+          ><br />
+          <hr />
+          References
+        </dt>
+        <dd>
+          Available on request.<br />
+          Check my
+          <a
+            href="https://www.linkedin.com/in/aravind-karnam-rajendraprasad/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn page</a
+          >
+          for Recommendations.
+        </dd>
+
+        <dd class="clear"></dd>
+      </dl>
+
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>
